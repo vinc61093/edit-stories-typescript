@@ -1,0 +1,614 @@
+@font-face {
+  font-family: 'FreightBigPro-Black';
+  src: url('../../fonts/FreightBigPro-Black/FreightBigPro-Black.eot') format('embedded-opentype'), url('../../fonts/FreightBigPro-Black/FreightBigPro-Black.otf') format('opentype'), url('../../fonts/FreightBigPro-Black/FreightBigPro-Black.woff') format('woff'), url('../../fonts/FreightBigPro-Black/FreightBigPro-Black.ttf') format('truetype'), url('../../fonts/FreightBigPro-Black/FreightBigPro-Black.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Austin';
+  src: url('../../fonts/Austin/austin-webfont.woff') format('woff'), url('../../fonts/Austin/austin-webfont.woff2') format('woff'), url('../../fonts/Austin/austin-webfont.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Riffle';
+  src: url('../../fonts/Riffle/Riffle-Regular.eot') format('embedded-opentype'), url('../../fonts/Riffle/Riffle-Regular.woff') format('woff'), url('../../fonts/Riffle/Riffle-Regular.woff2') format('woff'), url('../../fonts/Riffle/Riffle-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Montagna';
+  src: url('../../fonts/Montagna/MontagnaLTD.eot') format('embedded-opentype'), url('../../fonts/Montagna/MontagnaLTD.woff') format('woff'), url('../../fonts/Montagna/MontagnaLTD.woff2') format('woff'), url('../../fonts/Montagna/MontagnaLTD.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Bison';
+  src: url('../../fonts/Bison/Bison-Regular.eot') format('embedded-opentype'), url('../../fonts/Bison/Bison-Regular.woff') format('woff'), url('../../fonts/Bison/Bison-Regular.woff2') format('woff'), url('../../fonts/Bison/Bison-Regular.svg') format('svg');
+}
+@font-face {
+  font-family: 'Bison';
+  src: url('../../fonts/Bison/Bison-Regular.eot') format('embedded-opentype'), url('../../fonts/Bison/Bison-Regular.woff') format('woff'), url('../../fonts/Bison/Bison-Regular.woff2') format('woff'), url('../../fonts/Bison/Bison-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Boathouse';
+  src: url('../../fonts/Boathouse/Boathouse-Regular.eot') format('embedded-opentype'), url('../../fonts/Boathouse/Boathouse-Regular.woff') format('woff'), url('../../fonts/Boathouse/Boathouse-Regular.woff2') format('woff'), url('../../fonts/Boathouse/Boathouse-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Grandfather';
+  src: url('../../fonts/Grandfather/Grandfather-Alternates.eot') format('embedded-opentype'), url('../../fonts/Grandfather/Grandfather-Alternates.woff') format('woff'), url('../../fonts/Grandfather/Grandfather-Alternates.woff2') format('woff'), url('../../fonts/Grandfather/Grandfather-Alternates.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Quartz';
+  src: url('../../fonts/Quartz/QuartzGrotesque-Regular.eot') format('embedded-opentype'), url('../../fonts/Quartz/QuartzGrotesque-Regular.woff') format('woff'), url('../../fonts/Quartz/QuartzGrotesque-Regular.woff2') format('woff'), url('../../fonts/Quartz/QuartzGrotesque-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Freight Big W01 Semibold Italic';
+  src: url('../../fonts/FreightSemibold-Italic/72adf704-1622-456c-9f0e-ad67bc1e88f9.eot') format('embedded-opentype'), url('../../fonts/FreightSemibold-Italic/af8f6e79-639c-4eac-a7a0-1e7753139ddc.woff') format('woff'), url('../../fonts/FreightSemibold-Italic/0a2b0453-60c0-4654-8c82-2cb0c1a2b02d.woff2') format('woff'), url('../../fonts/FreightSemibold-Italic/958e9237-c96b-4283-9836-480c18795101.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('../../fonts/AmericanTypewriter/AmericanTypewriter.eot') format('embedded-opentype'), url('../../fonts/AmericanTypewriter/AmericanTypewriter.woff') format('woff'), url('../../fonts/AmericanTypewriter/AmericanTypewriter.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../../fonts/timesNewRoman/times_new_roman-webfont.woff') format('woff'), url('../../fonts/timesNewRoman/times_new_roman-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Petralina';
+  src: url('../../fonts/Petralina/Petralina_Regular.eot') format('embedded-opentype'), url('../../fonts/Petralina/Petralina_Regular.woff') format('woff'), url('../../fonts/Petralina/Petralina_Regular.ttf') format('ttf'), url('../../fonts/Petralina/Petralina_Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Carrol';
+  src: url('../../fonts/Carrol/Regular.otf') format('opentype'), url('../../fonts/Carrol/Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Enron';
+  src: url('../../fonts/EnriqueRoundSans/Enrique.otf') format('opentype'), url('../../fonts/EnriqueRoundSans/EnriqueRegular.woff') format('woff'), url('../../fonts/EnriqueRoundSans/EnriqueRegular.ttf') format('ttf'),
+  url('../../fonts/EnriqueRoundSans/EnriqueRegular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rotrude';
+  src: url('../../fonts/Rotrude/Regular.otf') format('opentype'), url('../../fonts/Rotrude/Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kiona';
+  src: url('../../fonts/KIONA/KIONA_Regular.ttf') format('ttf'), url('../../fonts/KIONA/KIONA_Regular.eot') format('embedded-opentype'), 
+  url('../../fonts/KIONA/KIONA_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copenhagen';
+  src: url('../../fonts/Copenhagen/CopenhagenRegular.ttf') format('ttf'), url('../../fonts/Copenhagen/CopenhagenRegular.eot') format('embedded-opentype'), url('../../fonts/Copenhagen/CopenhagenRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Liber';
+  src: url('../../fonts/Liber/LiberGrotesqueFamily-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Liber/LiberGrotesqueFamily-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Liber/LiberGrotesqueFamily-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/Liber/LiberGrotesqueFamily-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Liber/LiberGrotesqueFamily-Regular.svg#LiberGrotesqueFamily-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+@font-face {
+  font-family: 'Hustle';
+  src: url('../../fonts/HustleScript/HustleScript_Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Whestley';
+  src: url('../../fonts/Whestley/Whestley.ttf') format('ttf'), url('../../fonts/Whestley/Whestley.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.canvas-content {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  height: calc(100vh - 60px);
+}
+
+.canvas-input {
+  max-width: 503px;
+  max-height: 672px;
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+  height: calc(100% - 120px);
+}
+
+.canvas-container {
+  margin: 0 auto;
+  max-width: 378px;
+  max-height: 672px;
+  height: 100% !important;
+  width: 100% !important;
+  position: relative;
+  user-select: none;
+  z-index: 1;
+}
+
+.canvas-self {
+  /* max-width: 378px; */
+  height: 100% !important;
+  border-radius: 5px;
+  box-shadow: 0 0 40px 1px #aaa;
+  width: 100% !important;
+}
+
+.canvas-overlay {
+  font-size: 27px;
+}
+
+.canvas-overlay-second {
+  font-family: "FreightBigPro-Black";
+  font-size: 120px;
+  line-height: 90px;
+  text-transform: lowercase;
+  color: #ebccba;
+}
+
+.canvas-ovely-main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.canvas-delete-btn {
+  position: absolute;
+}
+
+.canvas-input-border:before, .canvas-input-border:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: #898989;
+}
+
+.canvas-input-border:before {
+  left: 0;
+}
+
+.canvas-input-border:after {
+  right: 0;
+}
+
+.canvas-input-border.top-border-canvas:before, .canvas-input-border.top-border-canvas:after {
+  top: 45px;
+}
+
+.canvas-input-border.bottom-border-canvas:before, .canvas-input-border.bottom-border-canvas:after {
+  bottom: 45px;
+}
+
+@media (max-width: 1024px) {
+  .nav-pills .nav-link {
+    padding: 15px;
+  }
+  .tabpan-middle input+.iris-picker {
+    width: 100% !important;
+  }
+  .tabpan-middle .iris-picker .iris-square {
+    width: 76% !important;
+  }
+  .tabpan-middle .iris-picker .iris-strip {
+    width: 12.5% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .tab-content.right {
+    padding: 80px 50px 95px;
+  }
+  .tabpan-footer .col-md-6 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .tabpan-top {
+    /* padding: 22px 20px; */
+  }
+  .tagselection {
+    /* padding: 10px 0px; */
+  }
+  .nav-pills .nav-link {
+    padding: 15px 10px;
+  }
+  .tabpan-middle {
+    padding: 35px 15px 0px
+  }
+  .textControls {
+    width: 100%;
+    left: 0 !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .swiper-button-next {
+    right: -15px;
+  }
+  .swiper-button-prev {
+    left: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-pills .nav-link {
+    padding: 15px 6px;
+    font-size: 10px;
+  }
+  .nav {
+    padding-left: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabpan-top .col-sm-6 {
+    padding: 0 7px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tabpan-top .col-sm-6 {
+    width: 50%;
+  }
+  body {
+    overflow-y: auto !important;
+  }
+  .tab-content.right {
+    height: auto;
+  }
+  .canvas-content{padding-left: 15px;padding-right: 15px;}
+  .powered-tag{margin-top: 20px;}
+}
+
+@media (max-height: 768px) {
+  .tab-content.right {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header h1, .header a {
+    width: 100%;
+    text-align: center;
+  }
+  .header a {
+    margin-top: 5px;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .canvas-input-border:before, .canvas-input-border:after {
+    display: none;
+  }
+  .tab-content.right {
+    padding: 120px 10px 135px;
+  }
+}
+
+@media screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  .tabpan-footer .col-md-6 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .tabpan-footer .col-md-6 {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.main-content .col-sm-4, .main-content .col-sm-8 {
+  max-height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+.main-content .col-sm-4 {
+  overflow-y: hidden;
+}
+
+.main-content .col-sm-4::-webkit-scrollbar, .main-content .col-sm-8::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-height: 795px) {
+  .canvas-content {
+    /* height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+  }
+  .canvas-overlay {
+    font-size: 20px;
+  }
+  
+  .canvas-overlay-second {
+    font-size: 90px;
+    line-height: 70px;
+  }
+  .canvas-input {
+    max-width: 373px;
+  }
+  .canvas-container{
+    max-width: 265.5px;
+  }
+}
+
+
+.powered-tag>em {
+  font-family: "Freight Big W01 Semibold Italic";
+  font-size: 20px;
+  color: #4c4a4a;
+}
+
+.bison-tag {
+  font-family: 'Bison';
+  visibility: hidden;
+}
+
+.boathouse-tag {
+  font-family: 'Boathouse';
+  visibility: hidden;
+}
+
+.grandfather-tag {
+  font-family: 'Grandfather';
+  visibility: hidden;
+}
+
+.quartz-tag {
+  font-family: 'Quartz';
+  visibility: hidden;
+}
+
+.american-typewriter-tag {
+  font-family: 'AmericanTypewriter';
+  visibility: hidden;
+}
+
+.times-new-roman-tag {
+  font-family: 'TimesNewRoman';
+  visibility: hidden;
+}
+
+.petralina-tag {
+  font-family: 'Petralina';
+  visibility: hidden;
+}
+.carrol-tag {
+  font-family: 'Carrol';
+  visibility: hidden;
+}
+.enron-tag {
+  font-family: 'Enron';
+  visibility: hidden;
+}
+.rotrude-tag {
+  font-family: 'Rotrude';
+  visibility: hidden;
+}
+.kiona-tag {
+  font-family: 'Kiona';
+  visibility: hidden;
+}
+.copenhagen-tag {
+  font-family: 'Copenhagen';
+  visibility: hidden;
+}
+.hustle-tag {
+  font-family: 'Hustle';
+  visibility: hidden;
+}
+.whestley-tag {
+  font-family: 'Whestley';
+  visibility: hidden;
+}
+
+.austin-tag {
+  font-family: 'Austin';
+  visibility: hidden;
+}
+
+.riffle-tag {
+  font-family: 'Riffle';
+  visibility: hidden;
+}
+
+.montagna-tag {
+  font-family: 'Montagna';
+  visibility: hidden;
+}
+
+#deleteBtn {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.textControls {
+  top: 15px;
+  z-index: 9999;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 0 0 5px;
+}
+
+#text-controls > div{
+  border-bottom: 1px solid #dddddd;padding: 7.5px 0;display: flex;align-items: center;justify-content: center;
+}
+#text-controls > div:first-child{border-top: 1px solid #dddddd;}
+
+#text-controls > div .selectstyled{display: inline-block;position: relative;background: url(../../images/select-arrow.png) no-repeat right #FFF;overflow: hidden;width: 70px;border: 1px solid #333;height: 27px;margin-right: 30px;}
+#text-controls > div .selectstyled:last-child{margin-right: 0px;}
+#text-controls > div .selectstyled select{background-color: transparent !important;-webkit-appearance: none;position: absolute;top: 0;left: 0;border: none;padding: 0 10px;width: 100%;}
+
+#text-controls > div .selectstyled.first{width: 165px;}
+
+#text-controls > div:last-child > span{padding: 3px 10px;margin: 0 15px;}
+
+#text-controls > div:last-child > span:last-child span{padding: 3px;}
+
+#text-controls select{height: 26px;}
+
+.text-wrapper {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0px
+}
+
+.text-wrapper label {
+  margin-bottom: 0px;
+}
+
+/* .textControls .chrome-picker {
+  margin: 20px auto 0px;
+} */
+
+.select-image-container {
+  font-family: 'Franklin Gothic Book', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.mediaControls {
+  top: 25px;
+  z-index: 9999;
+  font-size: 12px;
+  border-radius: 0px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #000;
+  /* max-width: 250px; */
+  margin: 10px 15px;
+  text-transform: uppercase;
+}
+
+.mediaControls:hover {
+  background-color: #e9cbba;
+  color: #fff;
+  border-color: #e9cbba;
+}
+
+.mediaControls>input {
+  opacity: 0;
+  width: 100%;
+}
+
+.mediaControls>div {
+  margin-top: -22px;
+}
+
+/* .textControls .chrome-picker {
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px, rgba(0, 0, 0, 0.3) 0px 4px 8px;
+    box-sizing: initial;
+    width: 100%;
+    font-family: "FreightBigPro-Black";
+    right: 0;
+    top: 80%;
+} */
+
+#btnBold a, #btnItalic a, #btnTT a, #left, #right, #center {
+  font-size: 14px;
+}
+
+@media (min-width: 576px){
+  .canvas-input {
+    max-width: 53.682vh;
+    max-height: 71.718vh;
+  }
+  .canvas-container {
+    max-width: 40.342vh;
+    max-height: 71.718vh;
+  }
+  .canvas-overlay {
+    font-size: 2vh;
+  }
+  .canvas-overlay-second {
+    font-size: 10vh;
+    line-height: 8vh;
+  }
+  .canvas-input-border:before, .canvas-input-border:after {
+    width: 3.201vh;
+  }
+  /* .powered-tag{font-size: 1.707vh;}
+  .powered-tag>em{font-size: 2.134vh} */
+  .powered-tag{position: absolute;
+    right: -70px;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        margin: 0;}
+  #text-controls > div{padding: 0.800vh}
+  #text-controls > div .selectstyled{height: 2.881vh;background-size: contain;width: 7.470vh;}
+  #text-controls select{height: 2.774vh;font-size: 1.280vh;padding: 0 1.0672vh;}
+  #text-controls *{font-size: 1.280vh;}
+  #text-controls > div:last-child > span{padding: 0.320vh 1.067vh;}
+  #text-controls > div .selectstyled.first{width: 19vh;}
+  #btnBold a, #btnItalic a, #btnTT a, #left, #right, #center {
+    font-size: 1.4941vh;
+  }
+}

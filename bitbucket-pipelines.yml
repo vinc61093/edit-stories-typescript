@@ -1,0 +1,24 @@
+image: joblocal/base-build-node-awscli
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: Deploy to Staging
+          deployment: staging
+          script:
+            - sh deploy.sh staging
+
+    release/*:
+      - step:
+          name: Deploy to Preprod
+          deployment: staging
+          script:
+            - sh deploy.sh preprod
+    master:
+      - step:
+          name: Deploy to Production
+          deployment: production
+          #trigger: manual
+          script:
+            - sh deploy.sh production

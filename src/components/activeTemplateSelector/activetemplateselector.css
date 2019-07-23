@@ -1,0 +1,9 @@
+.img-style-list{
+    margin: 2%;
+    cursor: pointer;
+    width: 8%;
+}
+
+.img-style-list.active{
+    border: 3px solid #888;
+}

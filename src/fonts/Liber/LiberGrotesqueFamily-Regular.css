@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Liber Grotesque Family';
+    src: url('LiberGrotesqueFamily-Regular.eot'); /* IE9 Compat Modes */
+    src: url('LiberGrotesqueFamily-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('LiberGrotesqueFamily-Regular.woff') format('woff'), /* Modern Browsers */
+         url('LiberGrotesqueFamily-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('LiberGrotesqueFamily-Regular.svg#LiberGrotesqueFamily-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,28 @@
+.div-style {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.txt-div .circle-picker {
+    margin-bottom: 10px !important;
+    justify-content: center;
+}
+
+.text-style {
+    font-size: 18px;
+}
+
+.text-style-swatch{
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.circle-picker span:last-child div span div{
+    border: 3px solid #d7d7d7;
+}
+@media (min-width: 576px){
+    .circle-picker{width: 37.961vh !important;}
+}

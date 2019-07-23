@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'FreightBigPro-Black';
+  src: url('FreightBigPro-Black.eot?#iefix') format('embedded-opentype'),  url('FreightBigPro-Black.otf')  format('opentype'),
+	     url('FreightBigPro-Black.woff') format('woff'), url('FreightBigPro-Black.ttf')  format('truetype'), url('FreightBigPro-Black.svg#FreightBigPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

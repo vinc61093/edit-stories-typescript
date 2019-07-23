@@ -1,0 +1,259 @@
+{
+  "service": {
+    "service": "web-storiesedit",
+    "serviceObject": {
+      "name": "web-storiesedit"
+    },
+    "provider": {
+      "stage": "preprod",
+      "region": "us-west-2",
+      "variableSyntax": "\\${([ ~:a-zA-Z0-9._@'\",\\-\\/\\(\\)]+?)}",
+      "name": "aws",
+      "runtime": "nodejs8.10",
+      "deploymentBucket": "pg-deployments",
+      "deploymentBucketObject": {
+        "name": "pg-deployments",
+        "serverSideEncryption": "AES256"
+      },
+      "versionFunctions": true,
+      "remoteFunctionData": null,
+      "compiledCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "WebAppRoute53": {
+            "Type": "AWS::Route53::RecordSet",
+            "Properties": {
+              "Type": "A",
+              "Name": "preprod-storiesedit.planoly.com",
+              "HostedZoneName": "planoly.com.",
+              "AliasTarget": {
+                "HostedZoneId": "Z2FDTNDATAQYW2",
+                "DNSName": {
+                  "Fn::GetAtt": [
+                    "WebAppCloudFrontDistribution",
+                    "DomainName"
+                  ]
+                }
+              }
+            }
+          },
+          "WebAppS3Bucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+              "BucketName": "web-storiesedit-preprod",
+              "AccessControl": "Private",
+              "WebsiteConfiguration": {
+                "IndexDocument": "index.html",
+                "ErrorDocument": "index.html"
+              }
+            }
+          },
+          "WebAppCloudFrontDistribution": {
+            "Type": "AWS::CloudFront::Distribution",
+            "Properties": {
+              "DistributionConfig": {
+                "Origins": [
+                  {
+                    "DomainName": "web-storiesedit-preprod.s3.amazonaws.com",
+                    "Id": "WebApp",
+                    "CustomOriginConfig": {
+                      "HTTPPort": 80,
+                      "HTTPSPort": 443,
+                      "OriginProtocolPolicy": "https-only"
+                    }
+                  }
+                ],
+                "Enabled": "true",
+                "Aliases": [
+                  "preprod-storiesedit.planoly.com"
+                ],
+                "DefaultRootObject": "index.html",
+                "CustomErrorResponses": [
+                  {
+                    "ErrorCode": 404,
+                    "ResponseCode": 200,
+                    "ResponsePagePath": "/index.html"
+                  }
+                ],
+                "DefaultCacheBehavior": {
+                  "AllowedMethods": [
+                    "DELETE",
+                    "GET",
+                    "HEAD",
+                    "OPTIONS",
+                    "PATCH",
+                    "POST",
+                    "PUT"
+                  ],
+                  "Compress": "true",
+                  "TargetOriginId": "WebApp",
+                  "ForwardedValues": {
+                    "QueryString": "true",
+                    "Cookies": {
+                      "Forward": "none"
+                    }
+                  },
+                  "ViewerProtocolPolicy": "redirect-to-https",
+                  "MinTTL": 86400,
+                  "MaxTTL": 31536000,
+                  "DefaultTTL": 86400
+                },
+                "ViewerCertificate": {
+                  "SslSupportMethod": "sni-only",
+                  "AcmCertificateArn": {
+                    "Fn::Sub": "arn:aws:acm:us-east-1:${AWS::AccountId}:certificate/0c9d3626-e8b9-49b2-a107-5c2816de41fd"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": "pg-deployments"
+          },
+          "WebAppS3BucketOutput": {
+            "Value": {
+              "Ref": "WebAppS3Bucket"
+            }
+          },
+          "WebAppCloudFrontDistributionOutput": {
+            "Value": {
+              "Fn::GetAtt": [
+                "WebAppCloudFrontDistribution",
+                "DomainName"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "custom": {
+      "defaultStage": "staging",
+      "defaultRegion": "us-west-2",
+      "s3LocalPath": "dist/",
+      "s3Bucket": "web-storiesedit-preprod",
+      "domains": {
+        "staging": "staging-storiesedit.planoly.com",
+        "preprod": "preprod-storiesedit.planoly.com",
+        "production": "storiesedit.planoly.com"
+      }
+    },
+    "plugins": [
+      "serverless-single-page-app-plugin",
+      "serverless-pseudo-parameters"
+    ],
+    "pluginsData": {},
+    "functions": {},
+    "resources": {
+      "Resources": {
+        "WebAppRoute53": {
+          "Type": "AWS::Route53::RecordSet",
+          "Properties": {
+            "Type": "A",
+            "Name": "preprod-storiesedit.planoly.com",
+            "HostedZoneName": "planoly.com.",
+            "AliasTarget": {
+              "HostedZoneId": "Z2FDTNDATAQYW2",
+              "DNSName": {
+                "Fn::GetAtt": [
+                  "WebAppCloudFrontDistribution",
+                  "DomainName"
+                ]
+              }
+            }
+          }
+        },
+        "WebAppS3Bucket": {
+          "Type": "AWS::S3::Bucket",
+          "Properties": {
+            "BucketName": "web-storiesedit-preprod",
+            "AccessControl": "Private",
+            "WebsiteConfiguration": {
+              "IndexDocument": "index.html",
+              "ErrorDocument": "index.html"
+            }
+          }
+        },
+        "WebAppCloudFrontDistribution": {
+          "Type": "AWS::CloudFront::Distribution",
+          "Properties": {
+            "DistributionConfig": {
+              "Origins": [
+                {
+                  "DomainName": "web-storiesedit-preprod.s3.amazonaws.com",
+                  "Id": "WebApp",
+                  "CustomOriginConfig": {
+                    "HTTPPort": 80,
+                    "HTTPSPort": 443,
+                    "OriginProtocolPolicy": "https-only"
+                  }
+                }
+              ],
+              "Enabled": "true",
+              "Aliases": [
+                "preprod-storiesedit.planoly.com"
+              ],
+              "DefaultRootObject": "index.html",
+              "CustomErrorResponses": [
+                {
+                  "ErrorCode": 404,
+                  "ResponseCode": 200,
+                  "ResponsePagePath": "/index.html"
+                }
+              ],
+              "DefaultCacheBehavior": {
+                "AllowedMethods": [
+                  "DELETE",
+                  "GET",
+                  "HEAD",
+                  "OPTIONS",
+                  "PATCH",
+                  "POST",
+                  "PUT"
+                ],
+                "Compress": "true",
+                "TargetOriginId": "WebApp",
+                "ForwardedValues": {
+                  "QueryString": "true",
+                  "Cookies": {
+                    "Forward": "none"
+                  }
+                },
+                "ViewerProtocolPolicy": "redirect-to-https",
+                "MinTTL": 86400,
+                "MaxTTL": 31536000,
+                "DefaultTTL": 86400
+              },
+              "ViewerCertificate": {
+                "SslSupportMethod": "sni-only",
+                "AcmCertificateArn": "arn:aws:acm:us-east-1:#{AWS::AccountId}:certificate/0c9d3626-e8b9-49b2-a107-5c2816de41fd"
+              }
+            }
+          }
+        }
+      },
+      "Outputs": {
+        "WebAppS3BucketOutput": {
+          "Value": {
+            "Ref": "WebAppS3Bucket"
+          }
+        },
+        "WebAppCloudFrontDistributionOutput": {
+          "Value": {
+            "Fn::GetAtt": [
+              "WebAppCloudFrontDistribution",
+              "DomainName"
+            ]
+          }
+        }
+      }
+    },
+    "layers": {}
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/web-storiesedit/preprod/1551143819563-2019-02-26T01:16:59.563Z",
+    "artifact": ""
+  }
+}

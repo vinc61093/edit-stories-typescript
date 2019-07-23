@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Quartz Grotesque Outlined';
+    src: url('QuartzGrotesque-Outlined.eot');
+    src: url('QuartzGrotesque-Outlined.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Outlined.woff2') format('woff2'),
+        url('QuartzGrotesque-Outlined.woff') format('woff'),
+        url('QuartzGrotesque-Outlined.svg#QuartzGrotesque-Outlined') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque Bold - Oblique';
+    src: url('QuartzGrotesque-Bold-Oblique.eot');
+    src: url('QuartzGrotesque-Bold-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Bold-Oblique.woff2') format('woff2'),
+        url('QuartzGrotesque-Bold-Oblique.woff') format('woff'),
+        url('QuartzGrotesque-Bold-Oblique.svg#QuartzGrotesque-Bold-Oblique') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque';
+    src: url('QuartzGrotesque-Regular.eot');
+    src: url('QuartzGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Regular.woff2') format('woff2'),
+        url('QuartzGrotesque-Regular.woff') format('woff'),
+        url('QuartzGrotesque-Regular.svg#QuartzGrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque';
+    src: url('QuartzGrotesque-Bold.eot');
+    src: url('QuartzGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Bold.woff2') format('woff2'),
+        url('QuartzGrotesque-Bold.woff') format('woff'),
+        url('QuartzGrotesque-Bold.svg#QuartzGrotesque-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque Oblique';
+    src: url('QuartzGrotesque-Oblique.eot');
+    src: url('QuartzGrotesque-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Oblique.woff2') format('woff2'),
+        url('QuartzGrotesque-Oblique.woff') format('woff'),
+        url('QuartzGrotesque-Oblique.svg#QuartzGrotesque-Oblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque Bold-Rounded';
+    src: url('QuartzGrotesque-Bold-Rounded.eot');
+    src: url('QuartzGrotesque-Bold-Rounded.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Bold-Rounded.woff2') format('woff2'),
+        url('QuartzGrotesque-Bold-Rounded.woff') format('woff'),
+        url('QuartzGrotesque-Bold-Rounded.svg#QuartzGrotesque-Bold-Rounded') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quartz Grotesque Rounded';
+    src: url('QuartzGrotesque-Rounded.eot');
+    src: url('QuartzGrotesque-Rounded.eot?#iefix') format('embedded-opentype'),
+        url('QuartzGrotesque-Rounded.woff2') format('woff2'),
+        url('QuartzGrotesque-Rounded.woff') format('woff'),
+        url('QuartzGrotesque-Rounded.svg#QuartzGrotesque-Rounded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

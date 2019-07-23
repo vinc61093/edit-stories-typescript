@@ -1,0 +1,11 @@
+.btn-tx{
+    display: inline-block;
+    vertical-align: top;
+    background: #ffffff;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid #dddddd;
+    padding: 5px 15px;
+    font-size: 14px;
+    margin: 0 6px 10px 6px;
+  }

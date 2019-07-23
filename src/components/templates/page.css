@@ -1,0 +1,7 @@
+body{
+    overflow: hidden;
+}
+.main-content {
+    float: left;
+    width: 100%;
+}
