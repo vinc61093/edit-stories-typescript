@@ -38,7 +38,7 @@
     "bootstrap": "^4.1.2",
     "es-cookie": "^1.2.0",
     "exif-js": "^2.3.0",
-    "fabric": "^2.6.0",
+    "fabric": "^5.2.4",
     "lc-form-validation": "^1.0.0",
     "react": "^16.4.1",
     "react-addons-create-fragment": "^15.6.2",
